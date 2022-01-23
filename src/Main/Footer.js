@@ -9,7 +9,7 @@ function Footer() {
     <Container className="pt-2 pb-2">
       <Row className="pt-2 pb-2 border rounded">
         <h6>
-          <IC.Headphones />
+          <IC.Headphones style={{ color: "orange" }} />
           Recently Played
         </h6>
         <Row className="pt-1 pb-1">

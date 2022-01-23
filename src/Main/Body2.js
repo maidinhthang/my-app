@@ -7,32 +7,40 @@ import * as IC from "react-bootstrap-icons";
 
 function Body2() {
   return (
-    <Container className="pt-4 pb-4">
+    <Container>
       <Row className="pt-4 pb-4 border rounded">
-        <h6>
-          <IC.DropletFill />
-          From the Library
-        </h6>
-        <CardGroup style={{ width: "50rem" }}>
+        <div className="h5 px-4">
+          <IC.BookHalf style={{ color: "orange" }} />
+          <span className="px-2">From the Library</span>
+        </div>
+        <CardGroup style={{ justifyContent: "space-around" }}>
           <Card className="border rounded mx-2">
-            <Card.Img variant="top p-2" src={greenlight} />
-            <Card.Title>Green Light</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            <Card.Img variant=" p-2" src={greenlight} />
+            <div className="px-4">
+              <Card.Title>48 Laws of Power</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            </div>
           </Card>
           <Card className="border rounded mx-2">
             <Card.Img variant="top p-2" src={apromised} />
-            <Card.Title>A promised lands</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            <div className="px-4">
+              <Card.Title>48 Laws of Power</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            </div>
           </Card>
           <Card className="border rounded mx-2">
             <Card.Img variant="top p-2" src={justasiam} />
-            <Card.Title>Jush I Am</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            <div className="px-4">
+              <Card.Title>48 Laws of Power</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            </div>
           </Card>
           <Card className="border rounded mx-2">
             <Card.Img variant="top p-2" src={becoming} />
-            <Card.Title>Becoming</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            <div className="px-4">
+              <Card.Title>48 Laws of Power</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            </div>
           </Card>
         </CardGroup>
       </Row>
