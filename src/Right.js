@@ -4,7 +4,7 @@ import lifeof from "./Photo/lifeof.png";
 import peterthiel from "./Photo/peterthiel.png";
 import barakobama from "./Photo/barakobama.png";
 import jayshetty from "./Photo/jayshetty.png";
-import jameclear from "./Photo/justasiam.png";
+import jamesclear from "./Photo/jamesclear.png";
 import cicelytyson from "./Photo/cicelytyson.png";
 import robertgreene from "./Photo/robertgreene.png";
 
@@ -58,26 +58,26 @@ function Right() {
           <Row className="g-2">
             <Col>
               <Col>
-                <Image src={peterthiel} />
+                <Image src={cicelytyson} />
               </Col>
               <Col>
-                <span>Peter Thiel</span>
-              </Col>
-            </Col>
-            <Col>
-              <Col>
-                <Image src={barakobama} />
-              </Col>
-              <Col>
-                <span>Barak Obama</span>
+                <span>Cicely Tyson</span>
               </Col>
             </Col>
             <Col>
               <Col>
-                <Image src={jayshetty} />
+                <Image src={jamesclear} />
               </Col>
               <Col>
-                <span>Jay Shetty</span>
+                <span>James Clear</span>
+              </Col>
+            </Col>
+            <Col>
+              <Col>
+                <Image src={robertgreene} />
+              </Col>
+              <Col>
+                <span>Robert Greene</span>
               </Col>
             </Col>
           </Row>
