@@ -14,7 +14,7 @@ function Footer() {
         </h6>
         <Row className="pt-1 pb-1">
           <Col md={1} className="m-0 p-0">
-            <span className="mx-3">1</span>
+            <span className="mx-2">1</span>
             <Image src={everything} />
           </Col>
           <Col className="m-0 p-0">
@@ -35,7 +35,7 @@ function Footer() {
         </Row>
         <Row className="pt-1 pb-1">
           <Col md={1} className="m-0 p-0">
-            <span className="mx-3">2</span>
+            <span className="mx-2">2</span>
             <Image src={atime} />
           </Col>
           <Col className="m-0 p-0">
@@ -56,7 +56,7 @@ function Footer() {
         </Row>
         <Row className="pt-1 pb-1">
           <Col md={1} className="m-0 p-0">
-            <span className="mx-3">3</span>
+            <span className="mx-2">3</span>
             <Image src={r} />
           </Col>
           <Col className="m-0 p-0">

@@ -8,6 +8,7 @@ import jamesclear from "./Photo/jamesclear.png";
 import cicelytyson from "./Photo/cicelytyson.png";
 import robertgreene from "./Photo/robertgreene.png";
 import obamaright from "./Photo/obamaright.png";
+import * as IC from "react-bootstrap-icons";
 
 function Right() {
   return (
@@ -105,16 +106,19 @@ function Right() {
         <Row>
           <Col>
             <Card.Img variant="top p-2" src={obamaright} />
-            <div className="px-4">
+            <Row className="p-4 px-4">
               <Card.Title className="px-4 d-flex justify-content-center">
                 48 Laws of Power
               </Card.Title>
               <Card.Subtitle className="mb-2 text-muted d-flex justify-content-center">
                 thangmd
               </Card.Subtitle>
-            </div>
+            </Row>
             <ProgressBar now={60} variant="white" />
           </Col>
+          <Row className="">
+            <IC.PauseBtn />
+          </Row>
         </Row>
       </Container>
     </>
