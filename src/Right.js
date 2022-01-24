@@ -1,12 +1,13 @@
-import { Col, Container, Row, Image } from "react-bootstrap";
-import bloodhair2 from "./Photo/bloodhair2.png";
-import lifeof from "./Photo/lifeof.png";
+import { Col, Container, Row, Image, Card, ProgressBar } from "react-bootstrap";
+import blood from "./Photo/blood.png";
+import light from "./Photo/light.png";
 import peterthiel from "./Photo/peterthiel.png";
 import barakobama from "./Photo/barakobama.png";
 import jayshetty from "./Photo/jayshetty.png";
 import jamesclear from "./Photo/jamesclear.png";
 import cicelytyson from "./Photo/cicelytyson.png";
 import robertgreene from "./Photo/robertgreene.png";
+import obamaright from "./Photo/obamaright.png";
 
 function Right() {
   return (
@@ -15,13 +16,27 @@ function Right() {
         <Row className="pt-2 pb-2">
           <h6>Notifications</h6>
           <Row className="pt-1 pb-1">
-            <Col className="m-0 p-0">
-              <Image src={bloodhair2} />
+            <Col md={2} className="m-0 p-0">
+              <Image src={blood} />
+            </Col>
+            <Col>
+              <Card.Title>48 Laws of Power</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            </Col>
+            <Col md={2}>
+              <span className="mb-2 text-muted">2 mins</span>
             </Col>
           </Row>
           <Row className="pt-1 pb-1">
-            <Col className="m-0 p-0">
-              <Image src={lifeof} />
+            <Col md={2} className="m-0 p-0">
+              <Image src={light} />
+            </Col>
+            <Col>
+              <Card.Title>48 Laws of Power</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
+            </Col>
+            <Col md={2}>
+              <span className="mb-2 text-muted">2 mins</span>
             </Col>
           </Row>
         </Row>
@@ -81,6 +96,25 @@ function Right() {
               </Col>
             </Col>
           </Row>
+        </Row>
+      </Container>
+      <Container className="pt-2 pb-2 bg-dark text-white ">
+        <Row>
+          <h4 className="d-flex justify-content-center">Now Playing</h4>
+        </Row>
+        <Row>
+          <Col>
+            <Card.Img variant="top p-2" src={obamaright} />
+            <div className="px-4">
+              <Card.Title className="px-4 d-flex justify-content-center">
+                48 Laws of Power
+              </Card.Title>
+              <Card.Subtitle className="mb-2 text-muted d-flex justify-content-center">
+                thangmd
+              </Card.Subtitle>
+            </div>
+            <ProgressBar now={60} variant="white" />
+          </Col>
         </Row>
       </Container>
     </>
