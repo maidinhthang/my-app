@@ -29,26 +29,26 @@ function Footer() {
     },
   ];
   return (
-    <Container className="pt-2 pb-2">
-      <Row className="pt-2 pb-2 border rounded">
-        <h6>
+    <Container>
+      <Row className="mb-4 pt-4 pb-4 border rounded">
+        <div className="h4 m-2 px-4 mb-4">
           <IC.Headphones style={{ color: "orange" }} />
-          Recently Played
-        </h6>
+          <span className="px-3"> Recently Played</span>
+        </div>
         {recentlyPlay.map((audio, index) => (
-          <Row className="pt-1 pb-1">
+          <Row key="index" className="pt-1 pb-1">
             <Col md={2} className="m-0 p-0 ms-4">
-              <span className="mx-1 px-3">{audio.no}</span>
+              <span className="mx-1 px-3 h6">{audio.no}</span>
               <Image src={audio.photo} />
             </Col>
-            <Col className="m-0 p-0">
+            <Col>
               <Card.Title>{audio.title}</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
                 {audio.subtitle}
               </Card.Subtitle>
             </Col>
             <Col md={3}>
-              <Row>
+              <Row className="h4">
                 <Col className="mb-2 text-muted">{audio.time}</Col>
                 <Col>
                   <IC.PlayBtn style={{ color: "orange" }} />

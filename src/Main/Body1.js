@@ -9,31 +9,33 @@ function Body1() {
     {
       photo: power,
       title: "48 Laws of Power",
-      subtitle: "thangmd",
+      subtitle: "Robert",
     },
     {
       photo: zero,
-      title: "48 Laws of Power",
-      subtitle: "thangmd",
+      title: "Zero to One",
+      subtitle: "Peter Thiel",
     },
     {
       photo: atomic,
-      title: "48 Laws of Power",
-      subtitle: "thangmd",
+      title: "Atimic Habits",
+      subtitle: "James Clear",
     },
     {
       photo: thinklike,
-      title: "48 Laws of Power",
-      subtitle: "thangmd",
+      title: "Think like Monk",
+      subtitle: "Jay Shetty ",
     },
   ];
   return (
     <Container>
-      <Row className="mb-4 pt-4 pb-4 border rounded">
-        <div className="d-flex h5  px-4">
+      <Row className="mb-4 pt-4 pb-4 border rounded ">
+        <div className="h4 m-2 px-4 mb-4">
           <IC.BookHalf style={{ color: "orange" }} />
-          <span className="px-2">From the Library</span>
-          <span className="d-flex justify-content-end">more</span>
+          <span className="px-3 ">
+            From the Library
+            <span className="justify-content-end">see all</span>
+          </span>
         </div>
         <CardGroup style={{ justifyContent: "space-around" }}>
           {library.map((Audio, index) => (

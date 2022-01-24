@@ -19,10 +19,10 @@ function Noti() {
   ];
   return (
     <Container className="pt-2 pb-2">
-      <Row className="pt-2 pb-2">
+      <Row className="mt-4 pt-2 pb-2">
         <h5 className="mb-4">Notifications</h5>
         {audios.map((audio, index) => (
-          <Row className="pt-1 pb-1 px-4">
+          <Row className="mb-2 pt-1 pb-1 px-4">
             <Col md={2} key={index} className="m-0 p-0">
               <Image src={audio.photo} />
             </Col>

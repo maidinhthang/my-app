@@ -9,31 +9,31 @@ function Body2() {
   const library = [
     {
       photo: greenlight,
-      title: "48 Laws of Power",
-      subtitle: "thangmd",
+      title: "Green Light",
+      subtitle: "Matthew McConaughey",
     },
     {
       photo: apromised,
-      title: "48 Laws of Power",
-      subtitle: "thangmd",
+      title: "A Promised Lands",
+      subtitle: "Barak Obama",
     },
     {
       photo: justasiam,
-      title: "48 Laws of Power",
-      subtitle: "thangmd",
+      title: "Just As I Am",
+      subtitle: "Cicely Tyson",
     },
     {
       photo: becoming,
-      title: "48 Laws of Power",
-      subtitle: "thangmd",
+      title: "Becoming",
+      subtitle: "Michelle Obama",
     },
   ];
   return (
     <Container>
       <Row className="mb-4 pt-4 pb-4 border rounded">
-        <div className="h5 px-4">
+        <div className="h4 m-2 px-4 mb-4">
           <IC.BookHalf style={{ color: "orange" }} />
-          <span className="px-2">From the Library</span>
+          <span className="px-3">Books That Might To Your Testy</span>
         </div>
         <CardGroup style={{ justifyContent: "space-around" }}>
           {library.map((Audio, index) => (
