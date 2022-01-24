@@ -5,6 +5,29 @@ import r from "../Photo/r.png";
 import * as IC from "react-bootstrap-icons";
 
 function Footer() {
+  const recentlyPlay = [
+    {
+      no: "01",
+      photo: everything,
+      title: "Everything that remains",
+      subtitle: "chapter 3",
+      time: "12:45",
+    },
+    {
+      no: "02",
+      photo: atime,
+      title: "A Time for Mercy",
+      subtitle: "last chapter",
+      time: "12:45",
+    },
+    {
+      no: "03",
+      photo: r,
+      title: "Rhythm of war",
+      subtitle: "chapter 14",
+      time: "12:45",
+    },
+  ];
   return (
     <Container className="pt-2 pb-2">
       <Row className="pt-2 pb-2 border rounded">
@@ -12,9 +35,35 @@ function Footer() {
           <IC.Headphones style={{ color: "orange" }} />
           Recently Played
         </h6>
-        <Row className="pt-1 pb-1">
+        {recentlyPlay.map((audio, index) => (
+          <Row className="pt-1 pb-1">
+            <Col md={2} className="m-0 p-0 ms-4">
+              <span className="mx-1 px-3">{audio.no}</span>
+              <Image src={audio.photo} />
+            </Col>
+            <Col className="m-0 p-0">
+              <Card.Title>{audio.title}</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                {audio.subtitle}
+              </Card.Subtitle>
+            </Col>
+            <Col md={3}>
+              <Row>
+                <Col className="mb-2 text-muted">{audio.time}</Col>
+                <Col>
+                  <IC.PlayBtn style={{ color: "orange" }} />
+                </Col>
+                <Col>
+                  <IC.PlusSquare style={{ color: "orange" }} />
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        ))}
+
+        {/* <Row className="pt-1 pb-1">
           <Col md={1} className="m-0 p-0">
-            <span className="mx-2">1</span>
+            <span className="mx-1">1</span>
             <Image src={everything} />
           </Col>
           <Col className="m-0 p-0">
@@ -74,7 +123,7 @@ function Footer() {
               </Col>
             </Row>
           </Col>
-        </Row>
+        </Row> */}
       </Row>
     </Container>
   );

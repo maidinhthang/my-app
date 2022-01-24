@@ -9,68 +9,68 @@ function Left() {
       <Image fluid src={audible} />
       <Container>
         <Row>
-          <Nav defaultActiveKey="/home" className="flex-column m-1">
+          <Nav defaultActiveKey="/home" className="flex-column m-2">
             <h6>MY AUDIBLE</h6>
-            <Nav.Link href="#library" className="text-dark  m-1">
+            <Nav.Link href="#library" className="text-dark  m-2">
               <IC.BookFill style={{ color: "orange" }} /> Library
             </Nav.Link>
-            <Nav.Link href="#my-favorites" className="text-dark  m-1">
+            <Nav.Link href="#my-favorites" className="text-dark  m-2">
               <IC.HeartFill style={{ color: "orange" }} />
-              My Favorites
+              <span>My Favorites</span>
             </Nav.Link>
-            <Nav.Link href="#listen-again" className="text-dark  m-1">
+            <Nav.Link href="#listen-again" className="text-dark  m-2">
               <IC.Earbuds style={{ color: "orange" }} />
-              Listen Again
+              <span>Listen Again</span>
             </Nav.Link>
-            <Nav.Link href="#Bookmarks" className="text-dark  m-1">
+            <Nav.Link href="#Bookmarks" className="text-dark  m-2">
               <IC.BookmarkFill style={{ color: "orange" }} />
-              Bookmarks
+              <span>Bookmarks</span>
             </Nav.Link>
-            <Nav.Link href="#notes" className="text-dark  m-1">
+            <Nav.Link href="#notes" className="text-dark  m-2">
               <IC.VectorPen style={{ color: "orange" }} />
-              Notes
+              <span>Notes</span>
             </Nav.Link>
           </Nav>
         </Row>
         <Row className="pt-4 pb-4 ">
-          <Nav defaultActiveKey="/home" className="flex-column  m-1">
+          <Nav defaultActiveKey="/home" className="flex-column  m-2">
             <h6>GET MORE</h6>
-            <Nav.Link href="#on-sale" className="text-dark  m-1">
+            <Nav.Link href="#on-sale" className="text-dark  m-2">
               <IC.WalletFill style={{ color: "orange" }} />
-              On Sale
+              <span>On Sale</span>
             </Nav.Link>
-            <Nav.Link href="#discover" className="text-dark  m-1">
+            <Nav.Link href="#discover" className="text-dark  m-2">
               <IC.CompassFill style={{ color: "orange" }} />
-              Discover
+              <span>Discover</span>
             </Nav.Link>
-            <Nav.Link href="#trending" className="text-dark  m-1">
+            <Nav.Link href="#trending" className="text-dark  m-2">
               <IC.CompassFill style={{ color: "orange" }} />
-              Trending
+              <span>Trending</span>
             </Nav.Link>
-            <Nav.Link href="#recommendations" className="text-dark m-1  ">
+            <Nav.Link href="#recommendations" className="text-dark m-2  ">
               <IC.BookmarkFill style={{ color: "orange" }} />
-              Recommendations
+              <span>Recommendations</span>
             </Nav.Link>
           </Nav>
         </Row>
         <Row>
-          <Nav defaultActiveKey="/home" className="flex-column m-1">
+          <Nav defaultActiveKey="/home" className="flex-column m-2">
             <h6>ACCOUNT</h6>
-            <Nav.Link href="#my-account" className="text-dark m-1">
+            <Nav.Link href="#my-account" className="text-dark m-2">
               <IC.PersonFill style={{ color: "orange" }} />
-              My Account
+              <span>My Account</span>
             </Nav.Link>
-            <Nav.Link href="#history" className="text-dark m-1">
+            <Nav.Link href="#history" className="text-dark m-2">
               <IC.BookHalf style={{ color: "orange" }} />
-              History
+              <span>History</span>
             </Nav.Link>
-            <Nav.Link href="#settings" className="text-dark m-1">
+            <Nav.Link href="#settings" className="text-dark m-2">
               <IC.GearFill style={{ color: "orange" }} />
-              Settings
+              <span>Settings</span>
             </Nav.Link>
-            <Nav.Link href="#logout" className="text-dark m-1">
+            <Nav.Link href="#logout" className="text-dark m-2">
               <IC.BoxArrowInLeft style={{ color: "orange" }} />
-              Logout
+              <span>Logout</span>
             </Nav.Link>
           </Nav>
         </Row>
