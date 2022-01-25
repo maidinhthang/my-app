@@ -1,4 +1,4 @@
-import { Row, Nav, Image, Container } from "react-bootstrap";
+import { Col, Row, Nav, Image, Container } from "react-bootstrap";
 import "./App.css";
 import audible from "./Photo/audible.png";
 import amazon from "./Photo/inaudiable.png";
@@ -6,7 +6,9 @@ import * as IC from "react-bootstrap-icons";
 function Left() {
   return (
     <>
-      <Image fluid src={audible} />
+      <Row>
+        <Image md={12} fluid src={audible} />
+      </Row>
       <Container>
         <Row>
           <span className="text-dark h4 m-2 pb-4">MY AUDIBLE</span>

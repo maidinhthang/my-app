@@ -33,7 +33,14 @@ function TopAuthers() {
   return (
     <Container className="pt-2 pb-2">
       <Row className="pt-2 pb-2">
-        <h5 className="mb-4">Top Authers</h5>
+        <Row className="mb-4 h5">
+          <Col>
+            <span>Top Authers</span>
+          </Col>
+          <Col>
+            <span className="d-flex justify-content-end">..</span>
+          </Col>
+        </Row>
         {authers.map((auther, index) => (
           <Col md={4} className="h6">
             <Col>

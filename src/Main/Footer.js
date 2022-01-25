@@ -32,13 +32,20 @@ function Footer() {
     <Container>
       <Row className="mb-4 pt-4 pb-4 border rounded">
         <div className="h4 m-2 px-4 mb-4">
-          <IC.Headphones style={{ color: "orange" }} />
-          <span className="px-3"> Recently Played</span>
+          <Row>
+            <Col>
+              <IC.Headphones style={{ color: "orange" }} />
+              <span className="px-3"> Recently Played</span>
+            </Col>
+            <Col>
+              <span className="px-3 d-flex justify-content-end">See All</span>
+            </Col>
+          </Row>
         </div>
         {recentlyPlay.map((audio, index) => (
           <Row key="index" className="pt-1 pb-1">
-            <Col md={2} className="m-0 p-0 ms-4">
-              <span className="mx-1 px-3 h6">{audio.no}</span>
+            <Col md={1} className="m-0 p-0 ms-4">
+              <span className=" px-3 h6">{audio.no}</span>
               <Image src={audio.photo} />
             </Col>
             <Col>
@@ -47,8 +54,8 @@ function Footer() {
                 {audio.subtitle}
               </Card.Subtitle>
             </Col>
-            <Col md={3}>
-              <Row className="h4">
+            <Col md={3} className="h4 d-flex justify-content-end">
+              <Row>
                 <Col className="mb-2 text-muted">{audio.time}</Col>
                 <Col>
                   <IC.PlayBtn style={{ color: "orange" }} />

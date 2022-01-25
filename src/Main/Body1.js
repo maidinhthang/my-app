@@ -30,12 +30,16 @@ function Body1() {
   return (
     <Container>
       <Row className="mb-4 pt-4 pb-4 border rounded ">
-        <div className="h4 m-2 px-4 mb-4">
-          <IC.BookHalf style={{ color: "orange" }} />
-          <span className="px-3 ">
-            From the Library
-            <span className="justify-content-end">see all</span>
-          </span>
+        <div className="h4 m-2 mb-4">
+          <Row>
+            <Col>
+              <IC.Headphones style={{ color: "orange" }} />
+              <span>From the Library</span>
+            </Col>
+            <Col>
+              <span className="px-3 d-flex justify-content-end">See All</span>
+            </Col>
+          </Row>
         </div>
         <CardGroup style={{ justifyContent: "space-around" }}>
           {library.map((Audio, index) => (

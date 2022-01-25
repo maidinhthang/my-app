@@ -5,7 +5,7 @@ import * as IC from "react-bootstrap-icons";
 function Playing() {
   return (
     <div className="mx-4 pt-2 pb-2 text-white bg-white">
-      <Card className="m-4 px-4 pt-2 pb-2 text-white bg-dark border rounded">
+      <Card className="px-4 pt-2 pb-2 text-white bg-dark border rounded">
         <Card.Title className="mt-4 pb-4 d-flex justify-content-center">
           Now Playing
         </Card.Title>

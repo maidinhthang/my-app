@@ -20,7 +20,14 @@ function Noti() {
   return (
     <Container className="pt-2 pb-2">
       <Row className="mt-4 pt-2 pb-2">
-        <h5 className="mb-4">Notifications</h5>
+        <Row className="mb-4 h5">
+          <Col>
+            <span>Notifications</span>
+          </Col>
+          <Col>
+            <span className="d-flex justify-content-end">..</span>
+          </Col>
+        </Row>
         {audios.map((audio, index) => (
           <Row className="mb-2 pt-1 pb-1 px-4">
             <Col md={2} key={index} className="m-0 p-0">
