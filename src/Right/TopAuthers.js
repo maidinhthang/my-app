@@ -7,7 +7,7 @@ import cicelytyson from "../Photo/cicelytyson.png";
 import robertgreene from "../Photo/robertgreene.png";
 
 function TopAuthers() {
-  const authers = [
+  const authers1 = [
     {
       photo: peterthiel,
       name: "Peter Thiel",
@@ -20,6 +20,8 @@ function TopAuthers() {
       photo: jayshetty,
       name: "Jay Shetty",
     },
+  ];
+  const authers2 = [
     {
       photo: cicelytyson,
       name: "Cicely Tyson",
@@ -30,27 +32,42 @@ function TopAuthers() {
       name: "Robert Greene",
     },
   ];
+
   return (
-    <Container className="pt-2 pb-2">
-      <Row className="pt-2 pb-2">
-        <Row className="mb-4 h5">
-          <Col>
-            <span>Top Authers</span>
-          </Col>
-          <Col>
-            <span className="d-flex justify-content-end">..</span>
-          </Col>
+    <Container fluid className="topauther">
+      <Row className="mainheadercard px-0">
+        <Col>
+          <span>Top Authers</span>
+        </Col>
+        <Col className="mainheadercard text-muted px-0">
+          <span className="d-flex justify-content-end">..</span>
+        </Col>
+      </Row>
+      <Row className="gridauther">
+        <Row>
+          {authers1.map((auther1, index) => (
+            <Col className="photoauther mx-0 px-0">
+              <Col>
+                <Image src={auther1.photo} />
+              </Col>
+              <Col>
+                <span className="nameauther">{auther1.name}</span>
+              </Col>
+            </Col>
+          ))}
         </Row>
-        {authers.map((auther, index) => (
-          <Col md={4} className="h6">
-            <Col>
-              <Image src={auther.photo} />
+        <Row>
+          {authers2.map((auther2, index) => (
+            <Col className="photoauther mx-0 px-0">
+              <Col>
+                <Image src={auther2.photo} />
+              </Col>
+              <Col>
+                <span className="nameauther">{auther2.name}</span>
+              </Col>
             </Col>
-            <Col>
-              <span>{auther.name}</span>
-            </Col>
-          </Col>
-        ))}
+          ))}
+        </Row>
       </Row>
     </Container>
   );

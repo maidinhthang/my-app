@@ -1,7 +1,7 @@
-import { Col, Container, Row, Image, Card, Button } from "react-bootstrap";
+import { Container, Row, Card, Button, Col, Image } from "react-bootstrap";
 import everything from "../Photo/everything.png";
 import atime from "../Photo/atime.png";
-import r from "../Photo/r.png";
+import rhythm from "../Photo/rhythm.png";
 import * as IC from "react-bootstrap-icons";
 
 function Footer() {
@@ -22,116 +22,66 @@ function Footer() {
     },
     {
       no: "03",
-      photo: r,
+      photo: rhythm,
       title: "Rhythm of war",
       subtitle: "chapter 14",
       time: "12:45",
     },
   ];
   return (
-    <Container>
-      <Row className="mb-4 pt-4 pb-4 border rounded">
-        <div className="h4 m-2 px-4 mb-4">
-          <Row>
-            <Col>
-              <IC.Headphones style={{ color: "orange" }} />
-              <span className="px-3"> Recently Played</span>
-            </Col>
-            <Col>
-              <span className="px-3 d-flex justify-content-end">See All</span>
-            </Col>
-          </Row>
-        </div>
-        {recentlyPlay.map((audio, index) => (
-          <Row key="index" className="pt-1 pb-1">
-            <Col md={1} className="m-0 p-0 ms-4">
-              <span className=" px-3 h6">{audio.no}</span>
-              <Image src={audio.photo} />
-            </Col>
-            <Col>
-              <Card.Title>{audio.title}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                {audio.subtitle}
-              </Card.Subtitle>
-            </Col>
-            <Col md={3} className="h4 d-flex justify-content-end">
-              <Row>
-                <Col className="mb-2 text-muted">{audio.time}</Col>
-                <Col>
-                  <IC.PlayBtn style={{ color: "orange" }} />
-                </Col>
-                <Col>
-                  <IC.PlusSquare style={{ color: "orange" }} />
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        ))}
-
-        {/* <Row className="pt-1 pb-1">
-          <Col md={1} className="m-0 p-0">
-            <span className="mx-1">1</span>
-            <Image src={everything} />
+    <Container fluid className="maincard3">
+      <Container fluid className="mainbodycard">
+        <Row>
+          <Col className="mainheadercard px-0">
+            <IC.Headphones className="mb-1" style={{ color: "orange" }} />
+            <span className="mx-2">Recently Played</span>
           </Col>
-          <Col className="m-0 p-0">
-            <Card.Title> Everything that remains</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
-          </Col>
-          <Col md={2}>
-            <Row>
-              <Col className="mb-2 text-muted">12:45</Col>
-              <Col>
-                <IC.PlayBtn style={{ color: "orange" }} />
-              </Col>
-              <Col>
-                <IC.PlusSquare style={{ color: "orange" }} />
-              </Col>
-            </Row>
+          <Col className="mainheadercard text-muted px-0">
+            <span className="d-flex justify-content-end ">See All</span>
           </Col>
         </Row>
-        <Row className="pt-1 pb-1">
-          <Col md={1} className="m-0 p-0">
-            <span className="mx-2">2</span>
-            <Image src={atime} />
-          </Col>
-          <Col className="m-0 p-0">
-            <Card.Title> A Time for Mercy</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
-          </Col>
-          <Col md={2}>
-            <Row>
-              <Col className="mb-2 text-muted">12:45</Col>
-              <Col>
-                <IC.PlayBtn style={{ color: "orange" }} />
+        <Row className="mx-0 px-0 maincardcontent align-content-between">
+          {recentlyPlay.map((play, index) => (
+            <Row
+              key="index"
+              className="rowfooter d-flex align-items-center mx-0 px-0"
+            >
+              <Col md={8}>
+                <Row>
+                  <Col md={1} className="m-0 p-0 d-flex align-items-center">
+                    <span className=" texttitle">{play.no}</span>
+                  </Col>
+                  <Col md={2} className="d-flex justify-content-end">
+                    <Image src={play.photo} />
+                  </Col>
+                  <Col md={9}>
+                    <Card.Title className="texttitle">{play.title}</Card.Title>
+                    <Card.Subtitle className="textsubtitle">
+                      {play.subtitle}
+                    </Card.Subtitle>
+                  </Col>
+                </Row>
               </Col>
-              <Col>
-                <IC.PlusSquare style={{ color: "orange" }} />
+              <Col
+                md={4}
+                className="h4 d-flex justify-content-end align-items-center mx-0 px-0"
+              >
+                <Row>
+                  <Col className="fonttime d-flex align-items-center">
+                    {play.time}
+                  </Col>
+                  <Col>
+                    <IC.PlayFill className="cardbuttonplay"></IC.PlayFill>
+                  </Col>
+                  <Col>
+                    <IC.Plus className="cardbuttonplay" />
+                  </Col>
+                </Row>
               </Col>
             </Row>
-          </Col>
+          ))}
         </Row>
-        <Row className="pt-1 pb-1">
-          <Col md={1} className="m-0 p-0">
-            <span className="mx-2">3</span>
-            <Image src={r} />
-          </Col>
-          <Col className="m-0 p-0">
-            <Card.Title> Rhythm of war</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">thangmd</Card.Subtitle>
-          </Col>
-          <Col md={2}>
-            <Row>
-              <Col className="mb-2 text-muted">12:45</Col>
-              <Col>
-                <IC.PlayBtn style={{ color: "orange" }} />
-              </Col>
-              <Col>
-                <IC.PlusSquare style={{ color: "orange" }} />
-              </Col>
-            </Row>
-          </Col>
-        </Row> */}
-      </Row>
+      </Container>
     </Container>
   );
 }

@@ -1,9 +1,10 @@
-import { Container, Row, Card, CardGroup, Col } from "react-bootstrap";
+import { Container, Row, Card, Button, Col } from "react-bootstrap";
 import power from "../Photo/power.png";
 import zero from "../Photo/zero.png";
 import atomic from "../Photo/atomic.png";
 import thinklike from "../Photo/thinklike.png";
 import * as IC from "react-bootstrap-icons";
+
 function Body1() {
   const library = [
     {
@@ -28,33 +29,34 @@ function Body1() {
     },
   ];
   return (
-    <Container>
-      <Row className="mb-4 pt-4 pb-4 border rounded ">
-        <div className="h4 m-2 mb-4">
-          <Row>
-            <Col>
-              <IC.Headphones style={{ color: "orange" }} />
-              <span>From the Library</span>
-            </Col>
-            <Col>
-              <span className="px-3 d-flex justify-content-end">See All</span>
-            </Col>
-          </Row>
-        </div>
-        <CardGroup style={{ justifyContent: "space-around" }}>
-          {library.map((Audio, index) => (
-            <Card className="border rounded mx-2">
-              <Card.Img variant=" p-2" key={index} src={Audio.photo} />
-              <div className="px-4">
-                <Card.Title>{Audio.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  {Audio.subtitle}
-                </Card.Subtitle>
+    <Container fluid className="maincard1">
+      <Container fluid className="mainbodycard">
+        <Row>
+          <Col className="mainheadercard px-0">
+            <IC.BookHalf className="pb-1" style={{ color: "orange" }} />
+            <span className="mx-2">From The Library</span>
+          </Col>
+          <Col className="mainheadercard text-muted px-0">
+            <span className="d-flex justify-content-end ">See All</span>
+          </Col>
+        </Row>
+        <Row className="mx-0 px-0 maincardcontent">
+          {library.map((audio, index) => (
+            <Card className="card">
+              <div className="cardphoto">
+                <Card.Img src={audio.photo} />
+                <IC.PlayFill className="cardbutton"></IC.PlayFill>
               </div>
+              <Card.Body className="m-1 p-1">
+                <Card.Title className="texttitle ">{audio.title}</Card.Title>
+                <Card.Subtitle className="textsubtitle">
+                  {audio.subtitle}
+                </Card.Subtitle>
+              </Card.Body>
             </Card>
           ))}
-        </CardGroup>
-      </Row>
+        </Row>
+      </Container>
     </Container>
   );
 }

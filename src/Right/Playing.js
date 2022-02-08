@@ -1,19 +1,20 @@
-import { Col, Row, Image, Card, ProgressBar } from "react-bootstrap";
+import { Col, Row, Image, Card, ProgressBar, Container } from "react-bootstrap";
 import obamaright from "../Photo/obamaright.png";
 import * as IC from "react-bootstrap-icons";
 
 function Playing() {
   return (
-    <div className="mx-4 pt-2 pb-2 text-white bg-white">
-      <Card className="px-4 pt-2 pb-2 text-white bg-dark border rounded">
-        <Card.Title className="mt-4 pb-4 d-flex justify-content-center">
+    <Container fluid className="playing">
+      <Card className="playcontent">
+        <Card.Title className="mainheadercard text-white d-flex justify-content-center">
           Now Playing
         </Card.Title>
-        <Card.Img variant="top" src={obamaright} />
-        <Card.Body>
-          <Card.Title className="pt-4 d-flex justify-content-center">
+        <Card.Img variant="top" src={obamaright} className="playingphoto" />
+        <Card.Body className="playingtitle text-white">
+          <Card.Title className="cardtitle  d-flex justify-content-center">
             A Promised Land
           </Card.Title>
+          <Card.Subtitle className="cardsubtitle">barak obama</Card.Subtitle>
         </Card.Body>
         <Card.Footer>
           <ProgressBar now={60} variant="white" />
@@ -71,7 +72,7 @@ function Playing() {
           </Row>
         </Col>
       </Row> */}
-    </div>
+    </Container>
   );
 }
 export default Playing;

@@ -1,0 +1,110 @@
+const library = [
+    {
+      photo: power,
+      title: "48 Laws of Power",
+      subtitle: "Robert",
+    },
+    {
+      photo: zero,
+      title: "Zero to One",
+      subtitle: "Peter Thiel",
+    },
+    {
+      photo: atomic,
+      title: "Atimic Habits",
+      subtitle: "James Clear",
+    },
+    {
+      photo: thinklike,
+      title: "Think like Monk",
+      subtitle: "Jay Shetty ",
+    },
+  ];
+................................................................
+
+
+   const library = [
+    {
+      photo: greenlight,
+      title: "Green Light",
+      subtitle: "Matthew McConaughey",
+    },
+    {
+      photo: apromised,
+      title: "A Promised Lands",
+      subtitle: "Barak Obama",
+    },
+    {
+      photo: justasiam,
+      title: "Just As I Am",
+      subtitle: "Cicely Tyson",
+    },
+    {
+      photo: becoming,
+      title: "Becoming",
+      subtitle: "Michelle Obama",
+    },
+  ];
+................................................................
+  const recentlyPlay = [
+    {
+      no: "01",
+      photo: everything,
+      title: "Everything that remains",
+      subtitle: "chapter 3",
+      time: "12:45",
+    },
+    {
+      no: "02",
+      photo: atime,
+      title: "A Time for Mercy",
+      subtitle: "last chapter",
+      time: "12:45",
+    },
+    {
+      no: "03",
+      photo: r,
+      title: "Rhythm of war",
+      subtitle: "chapter 14",
+      time: "12:45",
+    },
+  ];
+  ....................................
+  const audios = [
+    {
+      photo: blood,
+      title: "Blood Heir",
+      subtitle: "purchased",
+      time: "2 mins",
+    },
+    {
+      photo: light,
+      title: "Light of the Jedi",
+      subtitle: "Bookmarrked",
+      time: "2 mins",
+    },
+  ];
+  ................................................
+    const authers = [
+    {
+      photo: peterthiel,
+      name: "Peter Thiel",
+    },
+    {
+      photo: barakobama,
+      name: "Barak Obama",
+    },
+    {
+      photo: jayshetty,
+      name: "Jay Shetty",
+    },
+    {
+      photo: cicelytyson,
+      name: "Cicely Tyson",
+    },
+    { photo: jamesclear, name: "James clear" },
+    {
+      photo: robertgreene,
+      name: "Robert Greene",
+    },
+  ];

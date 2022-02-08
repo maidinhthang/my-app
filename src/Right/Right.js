@@ -5,10 +5,10 @@ import Playing from "./Playing";
 
 function Right() {
   return (
-    <Col style={{ backgroundColor: "#F4F9FF" }} className="p-3">
-      <Noti className="pt-2 pb-2" />
-      <TopAuthers className="pt-2 pb-2" />
-      <Playing className="pt-2 pb-2 " />
+    <Col className="right">
+      <Noti />
+      <TopAuthers />
+      <Playing />
     </Col>
   );
 }

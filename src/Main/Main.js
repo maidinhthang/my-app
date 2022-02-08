@@ -6,11 +6,11 @@ import Footer from "./Footer";
 
 function TabMain() {
   return (
-    <Col className="border rounded p-3">
-      <Header className="pt-2 pb-2 border rounded" />
-      <Body1 className="pt-2 pb-2 border rounded" />
-      <Body2 className="pt-2 pb-2 border rounded" />
-      <Footer className="pt-2 pb-2 border rounded" />
+    <Col>
+      <Header />
+      <Body1 />
+      <Body2 />
+      <Footer />
     </Col>
   );
 }

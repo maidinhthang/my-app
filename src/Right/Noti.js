@@ -18,31 +18,33 @@ function Noti() {
     },
   ];
   return (
-    <Container className="pt-2 pb-2">
-      <Row className="mt-4 pt-2 pb-2">
-        <Row className="mb-4 h5">
-          <Col>
-            <span>Notifications</span>
-          </Col>
-          <Col>
-            <span className="d-flex justify-content-end">..</span>
-          </Col>
-        </Row>
+    <Container fluid className="noti ">
+      <Row>
+        <Col className="mainheadercard px-0">
+          <span>Notifications</span>
+        </Col>
+        <Col className="mainheadercard text-muted px-0">
+          <span className="d-flex justify-content-end">..</span>
+        </Col>
+      </Row>
+      <Row className="notilist d-flex align-content-between mx-0 px-0">
         {audios.map((audio, index) => (
-          <Row className="mb-2 pt-1 pb-1 px-4">
-            <Col md={2} key={index} className="m-0 p-0">
-              <Image src={audio.photo} />
-            </Col>
-            <Col md={7}>
-              <Card.Title>{audio.title}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                {audio.subtitle}
-              </Card.Subtitle>
-            </Col>
-            <Col md={3}>
-              <span className="mb-2 text-muted">{audio.time}</span>
-            </Col>
-          </Row>
+          <Col md={12}>
+            <Row className="d-flex align-items-center">
+              <Col md={3} className="mx-0 px-0">
+                <Image src={audio.photo} />
+              </Col>
+              <Col md={7} className="mx-0 px-0">
+                <Card.Title className="texttitle">{audio.title}</Card.Title>
+                <Card.Subtitle className="textsubtitle">
+                  {audio.subtitle}
+                </Card.Subtitle>
+              </Col>
+              <Col md={2} className="fonttime mx-0 px-0">
+                {audio.time}
+              </Col>
+            </Row>
+          </Col>
         ))}
       </Row>
     </Container>

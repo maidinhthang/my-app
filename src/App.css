@@ -1,0 +1,270 @@
+.audible {
+  position: relative;
+  width: 1440px;
+  height: 1062px;
+  background: #ffffff;
+}
+
+.mainnav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 237px;
+  height: 20px;
+  left: 275px;
+  top: 37px;
+}
+.maincard1 {
+  position: absolute;
+  width: 758px;
+  height: 300px;
+  left: 276px;
+  top: 84px;
+
+  background: #ffffff;
+  /* Light */
+
+  border: 1px solid #e6effb;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.maincard2 {
+  position: absolute;
+  width: 758px;
+  height: 300px;
+  left: 276px;
+  top: 413px;
+  background: #ffffff;
+  /* Light */
+
+  border: 1px solid #e6effb;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.maincard3 {
+  position: absolute;
+  width: 758px;
+  height: 300px;
+  left: 276px;
+  top: 730px;
+  background: #ffffff;
+  /* Light */
+
+  border: 1px solid #e6effb;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.mainbodycard {
+  position: absolute;
+  width: 712px;
+  height: 251px;
+  left: 23px;
+  top: 23px;
+  right: 23px;
+  bottom: 26px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.mainheadercard {
+  font-family: Averta;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: -0.04em;
+
+  /* Text */
+
+  color: #2d2d2d;
+}
+.maincardcontent {
+  position: absolute;
+  width: 712px;
+  height: 205px;
+  left: 0px;
+  top: 46px;
+  bottom: 0px;
+  display: d-flex;
+  justify-content: space-between;
+}
+.card {
+  width: 163px;
+  height: 205px;
+}
+.cardphoto {
+  height: 125px;
+  width: 133px;
+  margin-top: 15px;
+}
+.cardbutton {
+  position: absolute;
+  height: 40px;
+  width: 39px;
+  left: 91px;
+  top: 82px;
+  background: #ffffff;
+  color: #fa7c05;
+  border-radius: 10px;
+}
+.cardbuttonplay {
+  height: 16px;
+  width: 13px;
+  left: 14px;
+  top: 12px;
+  border-radius: 2px;
+  color: #fa7c05;
+}
+.texttitle {
+  font-family: Averta;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+
+  letter-spacing: -0.02em;
+  color: #2d2d2d;
+}
+.textsubtitle {
+  font-family: Averta;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #7c8db5;
+}
+.contentfooter {
+  position: absolute;
+  width: 712px;
+  height: 186px;
+  left: 0px;
+  top: 46px;
+  bottom: 0px;
+  display: d-flex;
+}
+.rowfooter {
+  width: 712px;
+  height: 42px;
+  justify-content: space-between;
+}
+.fonttime {
+  font-family: Averta;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: -0.04em;
+
+  /* Dark */
+
+  color: #7c8db5;
+}
+.cardbuttonplay {
+  height: 40px;
+  width: 39px;
+  left: 91px;
+  top: 82px;
+  background: #ffffff;
+  color: #fa7c05;
+  border-radius: 10px;
+}
+/* .......................................  */
+.right {
+  position: absolute;
+  width: 366px;
+  height: 1062px;
+  left: 1074px;
+  top: 0px;
+
+  background: #f4f9ff;
+}
+.noti {
+  position: absolute;
+  width: 275px;
+  height: 187px;
+  left: 42px;
+  right: 49px;
+  top: 36px;
+}
+.notilist {
+  position: absolute;
+  width: 275px;
+  height: 140px;
+  left: 0px;
+  top: 47px;
+}
+.topauther {
+  position: absolute;
+  width: 290px;
+  height: 294px;
+  top: 263px;
+  left: 42px;
+}
+.gridauther {
+  position: absolute;
+  width: 276px;
+  height: 240px;
+  left: 14px;
+  top: 54px;
+}
+.photoauther {
+  width: 80px;
+  height: 107px;
+  display: d-flex;
+  justify-content: space-between;
+}
+.nameauther {
+  font-family: Averta;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  /* Text */
+
+  color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.playing {
+  position: absolute;
+  width: 276px;
+  height: 430px;
+  left: 42px;
+  top: 590px;
+
+  background: #2d2d2d;
+  border-radius: 15px;
+}
+.playcontent {
+  position: absolute;
+  width: 219px;
+  height: 359px;
+  left: 30px;
+  top: 32px;
+  background: #2d2d2d;
+  border-radius: 15px;
+}
+.playingphoto {
+  position: absolute;
+  width: 215px;
+  height: 129px;
+  left: 0px;
+  top: 52px;
+}
+.playingtitle {
+  width: 139px;
+  height: 41px;
+  left: 27px;
+  top: 212px;
+  margin-top: 30px;
+}
