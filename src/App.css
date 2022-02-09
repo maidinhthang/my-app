@@ -4,7 +4,100 @@
   height: 1062px;
   background: #ffffff;
 }
+.leftheader {
+  position: absolute;
+  width: 234px;
+  height: 84px;
+  left: 0px;
+  top: 0px;
 
+  background: linear-gradient(180deg, #e6effb 0%, rgba(230, 239, 251, 0) 100%);
+}
+.headerphoto {
+  position: absolute;
+  width: 116px;
+  height: 48px;
+  left: 54px;
+  top: 18px;
+}
+.layoutletf {
+  padding: 0px;
+  position: absolute;
+  width: 234px;
+  height: 1062px;
+  left: 0px;
+  top: 0px;
+}
+.layoutconten {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 234px;
+  height: 926px;
+  left: 0px;
+  top: 107px;
+}
+.myaudio {
+  position: absolute;
+  width: 234px;
+  height: 322px;
+  left: 0px;
+  top: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.myaudiobody {
+  position: absolute;
+  width: 234px;
+  height: 300px;
+  left: 0px;
+  top: 22px;
+}
+.getmore {
+  position: absolute;
+  width: 234px;
+  height: 262px;
+  left: 0px;
+  top: 362px;
+}
+.account {
+  position: absolute;
+  width: 234px;
+  height: 262px;
+  left: 0px;
+  top: 664px;
+}
+.rownav {
+  height: 60px;
+  width: 234px;
+}
+.texttitleleft {
+  font-family: Averta;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.textnavleft {
+  font-family: Averta;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* Text */
+
+  color: #2d2d2d;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 .mainnav {
   display: flex;
   flex-direction: row;
@@ -241,7 +334,6 @@
   height: 430px;
   left: 42px;
   top: 590px;
-
   background: #2d2d2d;
   border-radius: 15px;
 }
@@ -252,7 +344,6 @@
   left: 30px;
   top: 32px;
   background: #2d2d2d;
-  border-radius: 15px;
 }
 .playingphoto {
   position: absolute;
@@ -262,9 +353,19 @@
   top: 52px;
 }
 .playingtitle {
+  position: absolute;
   width: 139px;
   height: 41px;
-  left: 27px;
+  left: 38px;
   top: 212px;
-  margin-top: 30px;
+}
+.playcardfooter {
+  position: absolute;
+  width: 219px;
+  height: 70px;
+  left: 0px;
+  top: 278px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }

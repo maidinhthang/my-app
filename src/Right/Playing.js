@@ -5,38 +5,42 @@ import * as IC from "react-bootstrap-icons";
 function Playing() {
   return (
     <Container fluid className="playing">
-      <Card className="playcontent">
-        <Card.Title className="mainheadercard text-white d-flex justify-content-center">
+      <Col className="playcontent">
+        <Row className="mainheadercard text-white d-flex justify-content-center">
           Now Playing
-        </Card.Title>
+        </Row>
         <Card.Img variant="top" src={obamaright} className="playingphoto" />
-        <Card.Body className="playingtitle text-white">
-          <Card.Title className="cardtitle  d-flex justify-content-center">
+        <Row className="playingtitle px-0 mx-0">
+          <Card.Title className="texttitle text-white d-flex justify-content-center">
             A Promised Land
           </Card.Title>
-          <Card.Subtitle className="cardsubtitle">barak obama</Card.Subtitle>
-        </Card.Body>
-        <Card.Footer>
-          <ProgressBar now={60} variant="white" />
-          <Row className="mt-4 pt-2 mb-5 h5">
-            <Col className=" px-2 d-flex justify-content-center">
-              <IC.ArrowRepeat />
-            </Col>
-            <Col className="px-2 d-flex justify-content-center">
-              <IC.CaretLeftFill />
-            </Col>
-            <Col className="px-2 d-flex justify-content-center">
-              <IC.PauseBtn />
-            </Col>
-            <Col className="px-2 d-flex justify-content-center">
-              <IC.CaretRightFill />
-            </Col>
-            <Col className="px-2 d-flex justify-content-center">
-              <IC.VolumeUp />
-            </Col>
-          </Row>
-        </Card.Footer>
-      </Card>
+          <Card.Subtitle className="textsubtitle d-flex justify-content-center">
+            barak obama
+          </Card.Subtitle>
+        </Row>
+        <Row className="playcardfooter mx-0 px-0">
+          <Card.Footer style={{ color: "white" }}>
+            <ProgressBar now={60} variant="white" />
+            <Row className="mt-4 mb-5 h5 px-0 mx-0">
+              <Col className=" px-2 d-flex justify-content-center">
+                <IC.ArrowRepeat />
+              </Col>
+              <Col className="px-2 d-flex justify-content-center">
+                <IC.CaretLeftFill />
+              </Col>
+              <Col className="px-2 d-flex justify-content-center">
+                <IC.PauseBtn />
+              </Col>
+              <Col className="px-2 d-flex justify-content-center">
+                <IC.CaretRightFill />
+              </Col>
+              <Col className="px-2 d-flex justify-content-center">
+                <IC.VolumeUp />
+              </Col>
+            </Row>
+          </Card.Footer>
+        </Row>
+      </Col>
       {/* <Row>
         <h4 className="d-flex justify-content-center">Now Playing</h4>
       </Row>

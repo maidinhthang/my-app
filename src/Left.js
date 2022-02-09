@@ -1,9 +1,15 @@
 import { Col, Row, Nav, Image, Container } from "react-bootstrap";
-import "./App.css";
 import audible from "./Photo/audible.png";
 import amazon from "./Photo/inaudiable.png";
 import * as IC from "react-bootstrap-icons";
 function Left() {
+  const list = [
+    { icon: IC.BookFill, nav: "Library" },
+    { icon: IC.BookFill, nav: "My Favorite" },
+    { icon: IC.BookFill, nav: "Listen Again" },
+    { icon: IC.BookFill, nav: "Bookmarks" },
+    { icon: IC.BookFill, nav: "Notes" },
+  ];
   return (
     <>
       <Row>
