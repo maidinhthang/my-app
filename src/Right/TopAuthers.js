@@ -43,8 +43,8 @@ function TopAuthers() {
           <span className="d-flex justify-content-end">..</span>
         </Col>
       </Row>
-      <Row className="gridauther">
-        <Row>
+      <Row className="gridauther mx-0 px-0">
+        <Row className=" mx-0 px-0">
           {authers1.map((auther1, index) => (
             <Col className="photoauther mx-0 px-0">
               <Col>
@@ -56,7 +56,7 @@ function TopAuthers() {
             </Col>
           ))}
         </Row>
-        <Row>
+        <Row className=" mx-0 px-0">
           {authers2.map((auther2, index) => (
             <Col className="photoauther mx-0 px-0">
               <Col>
